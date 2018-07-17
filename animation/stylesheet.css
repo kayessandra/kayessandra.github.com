@@ -1,0 +1,52 @@
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+	background-color: #DFE2D9;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 20px;
+	background-color: red;
+	-webkit-animation-name: colorchange;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+	0% {background-color: #9DA9A0;}
+    25% {background-color: #654C4F;}
+    50% {background-color: #B26E63;}
+    100% {background-color: #CEC075;}
+}
+
+@-webkit-keyframes colorchange {
+	0% {background-color: #9DA9A0;}
+    25% {background-color: #654C4F;}
+    50% {background-color: #B26E63;}
+    100% {background-color: #CEC075;}
+}
+
+.moving-box {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	position: relative;
+	background-color: #DCBDB8;
+	-webkit-animation-name: movingbox;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@keyframes movingbox {
+	0%, 100% {left: 0%;}
+	50% {left: 50%;}
+}
+
+@-webkit-keyframes movingbox  {
+	0%, 100% {left: 0%;}
+	50% {left: 50%;}
+}
